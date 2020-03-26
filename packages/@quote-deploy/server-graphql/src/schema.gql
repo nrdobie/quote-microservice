@@ -1,0 +1,13 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  randomQuote: Quote!
+}
+
+type Quote {
+  id: ID!
+  quote: String!
+  author: String!
+}
