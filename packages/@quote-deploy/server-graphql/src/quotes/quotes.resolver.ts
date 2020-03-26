@@ -1,12 +1,13 @@
 import { Resolver, Query } from '@nestjs/graphql'
 import { Quote } from './models/quote.model'
+import { QuotesService } from './quotes.service';
 
 @Resolver(of => Quote)
 export class QuotesResolver {
-  constructor() {}
+  constructor(private readonly quotesService: QuotesService) {}
 
   @Query(returns => Quote)
-  async randomQuote() {
-    return {id: 1, quote: 'RANDOM', author: 'RANDY'};
+  randomQuote() {
+    return this.quotesService.getRandomQuote()
   }
 }
