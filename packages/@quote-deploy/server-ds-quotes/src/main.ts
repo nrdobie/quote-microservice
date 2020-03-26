@@ -1,9 +1,12 @@
 import { NestFactory } from '@nestjs/core';
-import { Transport, MicroserviceOptions } from '@nestjs/microservices';
+import { Logger } from '@nestjs/common'
+import { Transport, TcpOptions } from '@nestjs/microservices';
 import { AppModule } from './app.module';
 
+const logger = new Logger('Main')
+
 async function bootstrap() {
-  const app = await NestFactory.createMicroservice<MicroserviceOptions>(
+  const app = await NestFactory.createMicroservice<TcpOptions>(
     AppModule,
     {
       transport: Transport.TCP,
@@ -12,6 +15,6 @@ async function bootstrap() {
       }
     },
   );
-  await app.listen(() => console.log('HELLO MICRO SERVICE'));
+  await app.listen(() => logger.log(`Quotes Microservice ready at localhost:3001`));
 }
 bootstrap();

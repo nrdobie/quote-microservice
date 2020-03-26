@@ -89,9 +89,11 @@ importers:
       '@nestjs/graphql': 7.0.15_a4e9c6fda2492729d8e436082b2b7de8
       '@nestjs/microservices': 7.0.5_b4f97fe2147009e10fea41297c169ef9
       '@nestjs/platform-express': 7.0.5_9361d7a7eba36754485c5650e0a68eb0
+      '@types/lodash': 4.14.149
       apollo-server-express: 2.11.0_graphql@14.6.0
       graphql: 14.6.0
       graphql-tools: 4.0.7_graphql@14.6.0
+      lodash: 4.17.15
       reflect-metadata: 0.1.13
       rimraf: 3.0.2
       rxjs: 6.5.4
@@ -127,6 +129,7 @@ importers:
       '@nestjs/testing': ^7.0.0
       '@types/express': ^4.17.3
       '@types/jest': 25.1.4
+      '@types/lodash': ^4.14.149
       '@types/node': ^13.9.1
       '@types/supertest': ^2.0.8
       '@typescript-eslint/eslint-plugin': ^2.23.0
@@ -138,6 +141,7 @@ importers:
       graphql: ^14.6.0
       graphql-tools: ^4.0.7
       jest: ^25.1.0
+      lodash: ^4.17.15
       prettier: ^1.19.1
       reflect-metadata: ^0.1.13
       rimraf: ^3.0.2
@@ -1145,6 +1149,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2UPelagNNW6bnc1I5kIzluCaheXRA9S+NyOdXEFFj9Az7jc15ek5V03kb8OTbb3tdZ5i2BIJObe86PhHvpMolg==
+  /@types/lodash/4.14.149:
+    dev: false
+    resolution:
+      integrity: sha1-E0LWPZSMYGKDj7+WEBL3TU5jhEA=
   /@types/long/4.0.1:
     dev: false
     resolution:
@@ -5636,7 +5644,7 @@ packages:
       integrity: sha1-nBmm+fBjputT3QPBtocXmYAUY9c=
   /lodash/4.17.15:
     resolution:
-      integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+      integrity: sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
   /log-symbols/1.0.2:
     dependencies:
       chalk: 1.1.3
